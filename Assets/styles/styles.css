@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #DFF5FF;
+    color: #333;
+    line-height: 1.6;
+}
+
+.jumbotron {
+    padding: 60px;
+    font-size: 1.2rem;
+    background-color: #378CE7;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #67C6E3;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    margin-inline: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-inline: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #5356FF;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#content {
+    flex: 3;
+    flex-flow: column nowrap;
+    text-align: justify;
+}
+
+article img {
+    max-width: 200px;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: block;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+.profile-card h2 {
+    padding: 20px;
+    background-color: #5356FF;
+    color: #FFFF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin: 0;
+}
+
+.profile-card figure {
+    margin: 0 auto 15px auto;
+    width: 70%;
+}
+
+.profile-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #378CE7;
+    padding: 5px;
+}
+
+.profile-card figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #378CE7;
+}
+
+.profile-card table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.profile-card th, .profile-card td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-card th {
+    font-weight: bold;
+    color: #5356FF;
+}
+
+.profile-card td {
+    color: #333;
+}
+
+footer {
+    background-color: #5356FF;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+footer img {
+    max-width: 200px;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: block;
+}
+
+footer a {
+    color: #DFF5FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #67C6E3;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .jumbotron {
+        font-size: 1rem;
+    }
+
+    .profile-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .profile-card header h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-card figure {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .card {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+    
+    .profile-card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .profile-card header h2 {
+        font-size: 1rem;
+    }
+
+    .profile-card table {
+        font-size: 0.9rem;
+    }
+}
